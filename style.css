@@ -1,0 +1,106 @@
+*{
+	margin: 0; padding:0;
+	box-sizing: border -box;
+
+}
+header{
+	width: 100%; height: 100vh;
+	background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0)) ,url("mo.jpg");
+	background-size : 100% 100%;
+}
+nav{
+	width: 100%; height:10vh;
+	background-color: brown;
+	color:white;
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+	text-transform: uppercase;
+}
+.logo{
+	width: 25%; text-align: center;
+}
+.menu{
+	width:50%;
+	/*background: yellow;*/
+	
+	display: flex;
+	justify-content: space-around;
+}
+.menu a{
+	color: white; text-decoration: blink;
+	font-weight: : bold; width:20;
+	font-family: 'Josefin Sans', sans-serif ;
+
+}
+
+.menu a:first-child{
+	color:#00b894;
+}
+
+.menu a:second-child{
+	color:#00b894;
+}
+
+main{
+	width: 100%; height: 90vh;
+	display:flex;
+	justify-content: center; align-items: center;
+	color: rgb(250, 237, 237); text-align: center;
+}
+section{
+font-family: 'Josefin Sans', sans-serif ;
+}
+/*welcome to nepal*/
+section h3{
+	font-size: 50px;
+	font-weight: 150;
+	letter-spacing: 2px;
+	text-shadow: 1px 1px 1px black;
+	color:rgba(139, 39, 39, 0.87);
+	
+}
+/*come to visit*/
+section h1{
+	margin:30px 0 20px 0;
+    font-size: 60px;
+    font-weight: 400;
+    text-shadow: 2px 1px 5px black; 
+	letter-spacing: 4px;
+	color:white;
+}
+/*experience of a life time*/
+section h2{
+	margin:20px 0 5px 0;
+	font-size:30px;  font-weight:100;
+	
+	color:rgb(247, 179, 8);
+    word-spacing: 3px
+}
+.btnone{
+	margin: 80px 0;
+	font-weight: 700; font-size: 45;
+	word-spacing: 2px;
+	background: #00b894;
+	color:black;
+    text-decoration: none;
+    word-spacing: 3px;
+	
+}
+/*Text change infinite*/
+span:after{
+	content: '';
+	animation:changetext infinite 10s;
+	color:brown;
+}
+
+  @keyframes changetext{
+	  0%{content:"kathmandu"}
+	  20%{content:"Pokhara"}
+	  35%{content:"Chitwan"}
+	  50%{content:"Lumbini"}
+	  80%{content:"Mustang"}
+	  100%{content:"Mt.Everest"}
+
+  }
+	
